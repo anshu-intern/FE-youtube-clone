@@ -1,7 +1,7 @@
 # YouTube-Clone-Using-the-MERN-Stack
 YouTube Clone Using the MERN Stack
 
-A full-stack YouTube clone where users can view and interact with videos.
+Front end for YouTube clone where users can view and interact with videos.
 This project is built using MongoDB,Express, React, and Node.js (MERN stack).
 
 
@@ -71,7 +71,6 @@ Front-End (React)
 
 2. For frontend: 
     a. Navigate into the project directory inside the downloaded folder
-        cd youtube-clone
 
     b. Install dependencies
         npm install
