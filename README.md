@@ -84,7 +84,7 @@ Live production deployment (no installation needed):
 
 This project is deployed over the internet using VERCEL.
 
-Access this deployed application on the following link: 
+Access this deployed application on the following link: https://fe-youtube-clone.vercel.app/
 
 Try it out and do share your valuable feedback!
 
