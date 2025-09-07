@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://be-youtube-clone-8jop.onrender.com/api/$1"
+    }
+  ]
+}
