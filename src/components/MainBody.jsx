@@ -35,7 +35,7 @@ function MainBody(){
 
     useEffect(() => {
         if(searchText){
-            const filtered = videos.filter( v => v.title.toLowerCase().includes(searchText.toLowerCase()));
+            const filtered = videos.filter( v => v.title.toLowerCase().includes(searchText?.toLowerCase()));
             setFilteredVid(filtered);
             setCategory( [...new Set( filtered.map( i => i.category).filter(cat => cat) )] );
         }

@@ -159,8 +159,8 @@ function VideoPlayPage(){
                             </Link>
                             <span className="text-gray-500 text-[16px]">{video.channelId?.subscribers} subscribers</span>
                         </div>
-                        { ( video?.uploader !== loggedInUser?.userId )  && loggedInUser?.subs.includes(video.channelId?._id) && <button className="bg-black text-white rounded-3xl px-3 py-2 cursor-pointer text-[14px] font-medium" onClick={()=> handleChannelUnsubscribe()}>Subscribed</button> }
-                        {  loggedInUser && ( video?.uploader !== loggedInUser?.userId )  && !(loggedInUser?.subs.includes(video.channelId?._id)) && <button className="bg-black text-white rounded-3xl px-3 py-2 cursor-pointer text-[14px] font-medium" onClick={()=> handleChannelSubscribe()}>Subscribe</button> }
+                        { ( video?.uploader !== loggedInUser?.userId )  && loggedInUser?.subs.includes(video?.channelId?._id) && <button className="bg-black text-white rounded-3xl px-3 py-2 cursor-pointer text-[14px] font-medium" onClick={()=> handleChannelUnsubscribe()}>Subscribed</button> }
+                        {  loggedInUser && ( video?.uploader !== loggedInUser?.userId )  && !(loggedInUser?.subs.includes(video?.channelId?._id)) && <button className="bg-black text-white rounded-3xl px-3 py-2 cursor-pointer text-[14px] font-medium" onClick={()=> handleChannelSubscribe()}>Subscribe</button> }
                     </div>
                     <div className="flex justify-center items-center gap-3 px-2">
                         <div className="relative overflow-hidden flex">

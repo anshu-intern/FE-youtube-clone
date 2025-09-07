@@ -457,8 +457,8 @@ function ChannelHome(){
                                 <button onClick={() => setShowSetBanner(false)} className=' border rounded-3xl py-2 px-12 bg-white border-red-600 text-red-600 cursor-pointer '>Cancel</button>
                             </div>
                         }
-                        { (channel.owner_id !== user.loggedInUser?.userId) && user.loggedInUser?.subs.includes(channel._id) && <button className='px-3 py-2 border border-black rounded-3xl bg-black text-white font-bold text-[14px] cursor-pointer' onClick={() => handleChannelUnsubscribe()}>Subscribed</button> }
-                        { user.loggedInUser && (channel.owner_id !== user.loggedInUser?.userId) && !(user.loggedInUser?.subs.includes(channel._id)) && <button className='px-3 py-2 border border-black rounded-3xl bg-black text-white font-bold text-[14px] cursor-pointer' onClick={() => handleChannelSubscribe()}>Subscribe</button>  }
+                        { (channel.owner_id !== user.loggedInUser?.userId) && user.loggedInUser?.subs.includes(channel?._id) && <button className='px-3 py-2 border border-black rounded-3xl bg-black text-white font-bold text-[14px] cursor-pointer' onClick={() => handleChannelUnsubscribe()}>Subscribed</button> }
+                        { user.loggedInUser && (channel.owner_id !== user.loggedInUser?.userId) && !(user.loggedInUser?.subs.includes(channel?._id)) && <button className='px-3 py-2 border border-black rounded-3xl bg-black text-white font-bold text-[14px] cursor-pointer' onClick={() => handleChannelSubscribe()}>Subscribe</button>  }
                         { !user.loggedInUser && <span className='text-gray-500 text-[14px]'>Sign in to subscribe to channel.</span>}
                     </div>
                     <div className='relative flex flex-col gap-0 justify-start items-start p-1'>
