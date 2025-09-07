@@ -31,6 +31,7 @@ function VideoPlayPage(){
                 setLoad(false);
             }
         }
+        setLoad(true);
         fetchVideo();
         setLoad(false);
     }, [video_id, loggedInUser]);

@@ -29,6 +29,7 @@ function MainBody(){
                 navigate("/error");
             }  
         }    
+        setLoad(true);
         loadVideos();
         //user.setLoad(false);
     }, []);
