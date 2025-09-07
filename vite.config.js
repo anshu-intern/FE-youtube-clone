@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss(),],
   server: { proxy : { '/api' : {
-                              target: 'https://be-youtube-clone-8jop.onrender.com/',
+                              target: 'https://be-youtube-clone-8jop.onrender.com/api',
                               changeOrigin: true,
                               secure: false,
                               rewrite: (path) => path.replace(/^\/api/, ''),
