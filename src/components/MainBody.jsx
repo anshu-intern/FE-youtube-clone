@@ -30,7 +30,7 @@ function MainBody(){
             }  
         }    
         loadVideos();
-        user.setLoad(false);
+        //user.setLoad(false);
     }, []);
 
     useEffect(() => {
