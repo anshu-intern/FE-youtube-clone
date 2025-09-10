@@ -569,7 +569,7 @@ function ChannelHome(){
                                 vidMenuRef.current[vid._id] = React.createRef();
                             }
                             return( 
-                            <div key={vid._id} className='relative flex flex-col md:justify-start md:items-start gap-0 p-1 h-[340px] w-[100%] max-w-[400px] md:w-[40%] md:max-w-[400px] py-2 '>
+                            <div key={vid._id} className='relative flex flex-col md:justify-start md:items-start gap-0 p-1 h-[370px] w-[100%] max-w-[400px] md:w-[40%] md:max-w-[400px] py-2 '>
                                 <Link to={`/watch/${vid._id}`} className='w-[100%] cursor-pointer'>
                                 <img src={vid.thumbnailUrl} alt="video" className='relative h-[200px] w-[100%] rounded-xl object-cover pb-1'/>
                                 </Link>
