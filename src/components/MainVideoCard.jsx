@@ -21,7 +21,7 @@ function MainVideoCard({value}){
                </Link>
             </div>
             <Link to={`watch/${value._id}`} className='w-[100%]'>
-                <span className='w-[100%] text-[16px] font-bold text-black py-1'>{value.title}</span>
+                <span className='w-[100%] text-[16px] font-bold text-black py-1 line-clamp-2'>{value.title}</span>
             </Link>
             <Link to={`watch/${value._id}`} className='w-[100%]'>
                 <span className='w-[100%] text-[14px] text-gray-500 py-1'>{value.uploader?.username}</span>
